@@ -1,0 +1,10 @@
+# autoconfigurationstarter
+模拟Springboot的自动装配机制写个demo，目的是熟悉自动装配的流程
+
+# 说明
+一共分4个demo
+1. demo1模拟了@import普通导入一个类到Spring bean容器中
+2. demo2通过实现ImportBeanDefinitionRegistrar接口的registerBeanDefinitions()方法
+3. demo3通过实现ImportSelector接口的selectImports()方法
+4. demo4是demo3的改进版本,模拟写了一个EnableAutoConfig配置类,将需要自动装配的类放到META_INF/spring.factories下
+> 通过以上4个demo可以让我们更好的理解SpringBoot的自动装配原理
